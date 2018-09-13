@@ -1,0 +1,52 @@
+#I want to appreciate the organizers of CodeLagos for this initiative,
+#the program was worth it.
+#Thank you CodeLagos
+#Python programming language
+code = 'Python Programming Language course'
+topic = 'Project Name: USER LOGIN\n     by\n ogbaudu salome uzezi'
+explain = 'this is a project that allows users to login'
+print(code.upper())
+print(topic.upper())
+print(' ogbaudusalome@gmail.com\n')
+print(explain.upper())
+
+
+
+
+#This a python program which allows users to login to their account
+print('WELCOME USER! PLease enter your email address and password to login\n')
+print('Please note that your email address must be in any of these format:\n (i)@gmail.com\n(ii)@yahoo.com\n(iii)@companyname.com\n(iv).ng\n')
+
+
+#Define the values for username and password
+alphabets = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z')
+numbers = ('0', '1', '2', '3', '4', '5', '6', '7', '8', '9')
+characters = ('@', '#', '$', '.')
+
+
+#Allow user to input email and password
+username = input('Email: ')
+password = input('Password: ')
+
+while(1):
+    if ((len(username)>=7 and len(username)<=40)and (len(password)>=6) and len(password)<=16):
+        for alphabets in username:
+            for alphabets in password:
+                len(alphabets)>=1 and len(alphabets)<=35
+                len(alphabets)>=1 and len(alphabets)<=14
+        for numbers in username:
+            for numbers in password:
+                len(numbers)>=1 and len(numbers)<=14
+                len(numbers)>=1 and len(numbers)<=14
+        for characters in username:
+            for characters in password:
+                len(characters)>=1 and len(characters)<=5
+                len(characters)>=1 and len(characters)<=5
+        print('VALID USERNAME AND PASSWORD, ACCESS GRANTED!\n')
+        print('THANK YOU CodeLagos!\nTHANKS to our able tutor oga SEUN IYADI A.K.A CORNERSTONE!')
+        break
+    
+    else:
+        print('INVALID USERNAME AND PASSWORD, Please check the username or password and try again')
+        username = input('Please enter Email again: ')
+        password = input('Please enter Password again: ')
